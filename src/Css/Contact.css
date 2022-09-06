@@ -1,0 +1,92 @@
+.Contact{
+    background-color: black;
+    color: gray;
+    width: 88vw;
+    font-size: 2rem;
+    display: flex;
+    font-family: 'Caveat', cursive;
+    margin-top: 5rem;
+}
+
+.contact-left{
+    width: 50%;
+    margin-left: 3rem;
+}
+.contact-right{
+    width: 50%;
+ 
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+input{
+    margin-top: 15px;
+    background-color: rgb(37, 34, 34);
+    padding: 1rem 1rem;
+    color: whitesmoke;
+}
+.msg{
+    height: 10rem;
+    margin-top: 15px;
+    background-color: rgb(37, 34, 34);
+    padding: 1rem 1rem;
+    color: whitesmoke;
+}
+ 
+
+.inn{
+    width: 46% ;
+    position: relative;
+}
+.inn1{
+    margin-left: 17%;
+    padding-left: 50px;
+    position: absolute;
+    left:14rem;
+}
+input::placeholder{
+    font-family: 'Caveat', cursive;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+.inn1::placeholder{
+    position: relative;
+    right: 2.6rem;
+}
+.msg::placeholder{
+    font-family: 'Caveat', cursive;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+button{
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    font-family: 'Caveat', cursive;
+    border-radius: 6px;
+    color: rgb(2, 247, 153);;
+    border: 2px solid rgb(2, 247, 153);
+    background-color: transparent;
+    margin: 2rem 20rem;
+    letter-spacing: 2px;
+}
+
+.conntact-section{
+    margin: 20rem 5rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.social{
+    display: flex;
+    font-size: 3rem;
+
+}
+a:hover{
+    color: rgb(247, 34, 34);
+}
+.icon{
+    margin-top: 3rem;
+}

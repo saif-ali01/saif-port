@@ -1,0 +1,41 @@
+.Nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 12vw;
+    background-color: #0E0C0A;
+    color: aliceblue;
+    font-family: 'Caveat', cursive;
+    align-items: center;
+}
+.logo{
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-weight:900;
+   color: rgb(255, 70, 101);
+   margin-right: 2.5rem;
+
+}
+.imgg{
+    position: relative;
+    width: 12vw;
+    right:3px;
+    height: 100px;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-right:2rem;
+    margin-top: 0.5rem;
+
+}
+.item{
+    color: whitesmoke
+    ;
+    margin-top: 1.5rem;
+}
+.item:hover {
+   color: rgb(255, 70, 101);
+}

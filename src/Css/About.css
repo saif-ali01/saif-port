@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Qwitcher+Grypen&family=Roboto+Mono:ital,wght@0,100;0,200;1,400&display=swap');
+
+.About{
+    background-color: black;
+    height: 100vh;
+    width: 88vw;
+    display: flex;
+    color:white;
+}
+
+.About-right{
+    height: 100%;
+    width: 50%;
+    font-family: 'Caveat', cursive;
+    color: gray;
+    margin-left: 2vw;
+    font-size: 2rem;
+
+
+}
+.About-right>h1{
+    color:rgb(248, 47, 81);
+    font-size: 4rem;
+    margin-left: 2rem;
+}
+.About-right>p{
+    color: whitesmoke;
+    margin:0rem 2rem;
+}
+.About-left{
+    width: 50%;
+}
+.about-image{
+    position: relative;
+    margin: 3rem 10rem;
+    height: 500px;
+width: 320px;
+border-top: 10px solid rgb(248, 47, 81);
+border-left: 10px solid rgb(248, 47, 81);
+}
+.about-image>img{
+ position: absolute;
+height: 500px;
+width: 320px;
+top: 1rem;
+left: 1rem;
+
+
+}

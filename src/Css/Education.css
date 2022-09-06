@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Qwitcher+Grypen&family=Roboto+Mono:ital,wght@0,100;0,200;1,400&display=swap');
+
+.Education{
+    background-color: black;
+    color: gray;
+    height: 100vh;
+    width: 88vw;
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    font-family: 'Caveat', cursive;
+
+}
+h1{
+    color: rgb(245, 12, 214);
+    margin: 2rem;
+    
+}
+.heading1{
+    color: rgb(229, 245, 3);
+    font-size: 1.5rem;
+}
+.heading{
+   color: rgb(8, 255, 49);
+   font-size: 1.5rem;
+}
+.head{
+    color: aqua;
+    font-size: 2.5rem;
+    padding-right:2rem ;
+}
+p{
+    color: whitesmoke;
+}
+.edu{
+    margin: 1rem;
+    
+}
