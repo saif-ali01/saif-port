@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/saif-port/static/css/main.17dac72d.css",
+    "main.js": "/saif-port/static/js/main.df27f31a.js",
+    "index.html": "/saif-port/index.html",
+    "main.17dac72d.css.map": "/saif-port/static/css/main.17dac72d.css.map",
+    "main.df27f31a.js.map": "/saif-port/static/js/main.df27f31a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17dac72d.css",
+    "static/js/main.df27f31a.js"
+  ]
+}
