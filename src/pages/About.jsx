@@ -16,11 +16,12 @@ const About = () => {
       <div className="About-right">
         {about}
         <h1>Me & My Self</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, nemo. Voluptas amet aliquid, sequi at voluptatem odit facere dolore optio. Necessitatibus, eum! Explicabo unde molestias quidem consectetur recusandae, praesentium nisi.
+        <p>I’m a Marn  stack Developer located in India. I have a serious passion for building Web Applicatin, Rest API and creating intuitive, dynamic user experiences..
           <br />
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet quam ipsa repellendus, quasi qui voluptatem excepturi officia quidem minus.
+          -- Well-organised person, <br />--  problem solver, <br />-- creative person.
         </p>
+        <br />
         {about1}
       </div>
       

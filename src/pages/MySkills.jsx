@@ -9,7 +9,9 @@ const MySkills = () => {
         {skill}
         <h1>Skills.. </h1>
         <br />
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam impedit ullam, deleniti magni quasi minus ratione atque molestiae exercitationem adipisci quo, explicabo maiores recusandae illum? Corporis, fugit? Obcaecati, et autem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores animi autem, ea adipisci ipsam placeat.</p>
+        <br />
+        <p className='lst'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur. </p>
         <br />
         {skill1}
       </div>

@@ -1,8 +1,8 @@
 .MySkill{
-    margin-top: 3rem;
+    margin-top: 6rem;
     font-size: 2rem;
     background-color: black;
-    height: 100vh;
+    height: 110vh;
     width: 88vw;
     display: flex;
 }
@@ -30,7 +30,8 @@ to{width: 26rem;}
     color: whitesmoke;
     font-family: 'Caveat', cursive;
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 7rem;
+    margin-left: 4rem;
 
 }
 .progressbar{
@@ -42,7 +43,7 @@ to{width: 26rem;}
     position: absolute;
     height: 5px;
     width: 29rem;
-    margin-top: 8px;
+    margin-top: 0px;
     border: 1px solid rgb(189, 4, 173);
 }
 .pb2{
