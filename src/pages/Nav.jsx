@@ -1,10 +1,12 @@
 import React from 'react'
 import  '../Css/Nav.css'
+import bgImage from "../assets/s1.jpg";
+
 import {Link} from 'react-scroll'
 const Nav = () => {
   return (
 <div className="Nav">
-<Link  to="main" spy={true} smooth={true} offset={50} duration={500}><div className="logo"><img src="./s1.jpg" className='imgg' alt="" /></div></Link>
+<Link  to="main" spy={true} smooth={true} offset={50} duration={500}><div className="logo"><img src={bgImage} className='imgg' alt="" /></div></Link>
     <div className="items">
         <Link className='item active' to="home" spy={true} smooth={true} offset={50} duration={500}>Home</Link>
         <Link className='item' to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
