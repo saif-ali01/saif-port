@@ -5,7 +5,7 @@ import "../App.css"
 const Loading = () => {
   return (
     <div className="loading-overlay">
-      <TailSpin color="#00BFFF" height={80} width={80} />
+      <TailSpin color="rgb(255, 70, 101)" height={80} width={80} />
     </div>
   );
 };
