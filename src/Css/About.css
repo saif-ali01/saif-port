@@ -6,6 +6,7 @@
     width: 88vw;
     display: flex;
     color:white;
+    
 }
 
 .About-right{
@@ -46,4 +47,89 @@ top: 1rem;
 left: 1rem;
 
 
+}
+/* Existing styles remain the same */
+
+/* Tablet Styles (768px and below) */
+@media (max-width: 768px) {
+  .About {
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+    padding: 2rem 0;
+    width: 100vw;
+  }
+
+  .About-left,
+  .About-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-image {
+    margin: 2rem auto;
+    height: 400px;
+    width: 260px;
+  }
+
+  .about-image > img {
+    height: 400px;
+    width: 260px;
+  }
+
+  .About-right {
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+  }
+
+  .About-right > h1 {
+    font-size: 3rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .About-right > p {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* Mobile Styles (480px and below) */
+@media (max-width: 480px) {
+  .About {
+    height: 60vh;
+  }
+
+  .about-image {
+    margin: 1rem auto;
+    height: 300px;
+    width: 200px;
+    border-width: 6px;
+  }
+
+  .about-image > img {
+    height: 300px;
+    width: 200px;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .About-right {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .About-right > h1 {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+  }
+
+  .About-right > p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .About-right br {
+    display: none;
+  }
 }

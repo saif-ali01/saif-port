@@ -1,30 +1,146 @@
-.Project{
-display: flex;
-color: gray;
-font-size: 2rem;
-flex-direction: column;
-margin-top: 2rem;
-font-family: 'Caveat', cursive;
-}
-.pro{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1rem 1rem ;
-    
-}
-.pro1{
-    background-color: rgba(255,255,255,0.1);
-    box-shadow : 0px 2px 2px 2px rgba(255,255,255,0.2) ;
-    border-top: 3px solid red;
-    height: 250px;
-    width: 350px;
-    margin: 1rem 1rem;
-}
-h6,.pp{
-    margin: 1.6rem;
+.Project {
+  display: flex;
+  background-color: black;
+  color: gray;
+  font-size: 2rem;
+  flex-direction: column;
+  margin-top: 5rem;
+  font-family: 'Caveat', cursive;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-a{
-    margin-left: 3rem;
-    color: gray;
+.pro {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 1rem;
+  justify-content: center;
+  /* Added for better centering */
+}
+
+.pro1 {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 2px 2px 2px rgba(255, 255, 255, 0.2);
+  border-top: 3px solid red;
+  height: auto;
+  display: grid;
+  width: calc(33% - 2rem);
+  /* Responsive width calculation */
+  margin: 1rem;
+  min-width: 300px;
+  /* Minimum width before wrapping */
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  /* Added hover effect */
+}
+
+.pro1:hover {
+  transform: translateY(-5px);
+}
+
+h6, .pp
+{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 1.6rem;
+
+}
+.pp{
+  font-size: 25px;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  margin-left: 3rem;
+  color: gray;
+  text-decoration: none;
+  /* Added for better link styling */
+}
+
+a:hover {
+  color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .pro1 {
+    width: calc(50% - 2rem);
+    /* Two columns on tablets */
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Project {
+    font-size: 1.7rem;
+  }
+
+  .pro1 {
+    height: 220px;
+    margin: 0.8rem;
+    min-width: 200px;
+  }
+
+  h6,
+  .pp {
+    margin: 1.2rem;
+    font-size: 0.9em;
+  }
+
+  a {
+    margin-left: 1.5rem;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .Project {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .pro {
+    margin: 0.5rem;
+  }
+
+  .pro1 {
+    width: 100%;
+    /* Full width on mobile */
+    height: auto;
+    min-height: 200px;
+    margin: 0.5rem 0;
+    min-width: unset;
+  }
+
+  h6,
+  .pp {
+    margin: 1rem;
+    font-size: 0.8em;
+  }
+
+  a {
+    margin-left: 1rem;
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 360px) {
+  .Project {
+    font-size: 1.3rem;
+  }
+
+  .pro1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  h6,
+  .pp {
+    margin: 0.8rem;
+  }
 }

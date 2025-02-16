@@ -1,55 +1,133 @@
-.MySkill{
-    margin-top: 6rem;
+.MySkill {
+   
     font-size: 2rem;
     background-color: black;
-    height: 110vh;
+    min-height: 110vh;
     width: 88vw;
     display: flex;
+    
 }
-.myskill-left{
+
+.myskill-left {
     width: 50%;
     color: gray;
     font-family: 'Caveat', cursive;
-
+    padding: 0 2rem;
 }
-.myskill-left>h1{
-    color:rgb(248, 47, 81);
+
+.myskill-left>h1 {
+    color: rgb(248, 47, 81);
     font-size: 5rem;
     margin-left: 2rem;
 }
-.myskill-left>p{
+
+.myskill-left>p {
     color: whitesmoke;
-    margin:0rem 2rem;
+    margin: 0rem 2rem;
+    line-height: 1.6;
 }
-@keyframes progressing{
-from{width: 0px;}
-to{width: 26rem;}
+
+@keyframes progressing {
+    from { width: 0; }
+    to { width: 100%; }
 }
-.myskill-right{
+
+.myskill-right {
     width: 50%;
     color: whitesmoke;
     font-family: 'Caveat', cursive;
     font-size: 2rem;
-    margin-top: 7rem;
-    margin-left: 4rem;
+    padding: 0 2rem;
+}
 
-}
-.progressbar{
-    margin-top: 2rem;
+.progressbar {
+    margin: 2rem 0;
     height: 3rem;
-    width: 29rem;
+    width: 100%;
 }
-.pb1{
-    position: absolute;
-    height: 5px;
-    width: 29rem;
-    margin-top: 0px;
-    border: 1px solid rgb(189, 4, 173);
-}
-.pb2{
+
+.pb1 {
     position: relative;
     height: 5px;
-    width: 26rem;
-    animation: progressing 1s ease ;
-    background-color:rgb(248, 47, 81);
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid rgb(189, 4, 173);
+}
+
+.pb2 {
+    position: absolute;
+    height: 100%;
+    animation: progressing 1s ease;
+    background-color: rgb(248, 47, 81);
+}
+
+/* Tablet Styles (768px and below) */
+@media (max-width: 768px) {
+    .MySkill {
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+    }
+
+    .myskill-left,
+    .myskill-right {
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    .myskill-left>h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .myskill-left>p {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .myskill-right {
+        margin-top: 3rem;
+        font-size: 1.8rem;
+    }
+
+    .progressbar {
+        width: 90%;
+        margin: 2rem auto;
+    }
+}
+
+/* Mobile Styles (480px and below) */
+@media (max-width: 480px) {
+    .MySkill {
+        margin-top: 3rem;
+        padding: 1rem 0;
+    }
+
+    .myskill-left>h1 {
+        font-size: 2.8rem;
+    }
+
+    .myskill-left>p {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    .myskill-right {
+        font-size: 1.6rem;
+    }
+
+    .progressbar {
+        width: 100%;
+    }
+
+    .pb1 {
+        width: 100%;
+    }
+
+    .myskill-left br,
+    .myskill-right br {
+        display: none;
+    }
+ 
 }

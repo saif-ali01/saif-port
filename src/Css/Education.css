@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Qwitcher+Grypen&family=Roboto+Mono:ital,wght@0,100;0,200;1,400&display=swap');
 
-.Education{
+.Education {
     background-color: black;
     color: gray;
     height: 100vh;
@@ -9,30 +9,93 @@
     font-size: 2rem;
     flex-direction: column;
     font-family: 'Caveat', cursive;
-
+    padding: 1rem;
+    box-sizing: border-box;
 }
-h1{
+
+h1 {
     color: rgb(245, 12, 214);
     margin: 2rem;
-    
 }
-.heading1{
+
+.heading1 {
     color: rgb(229, 245, 3);
     font-size: 1.5rem;
 }
-.heading{
-   color: rgb(8, 255, 49);
-   font-size: 1.5rem;
+
+.heading {
+    color: rgb(8, 255, 49);
+    font-size: 1.5rem;
 }
-.head{
+
+.head {
     color: aqua;
     font-size: 2.5rem;
-    padding-right:2rem ;
+    padding-right: 2rem;
 }
-p{
+
+p {
     color: whitesmoke;
 }
-.edu{
+
+.edu {
     margin: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .Education {
+        width: 90vw; /* Adjust width for tablets */
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .heading1, .heading {
+        font-size: 1.3rem;
+    }
+
+    .head {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
     
+    .edu {
+        margin: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .Education {
+        width: 100vw; /* Full width on small screens */
+        height: auto;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .heading1, .heading {
+        font-size: 1.2rem;
+    }
+
+    .head {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+    
+    .edu {
+        margin: 0.3rem;
+    }
 }

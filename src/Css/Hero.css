@@ -1,48 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Qwitcher+Grypen&family=Roboto+Mono:ital,wght@0,100;0,200;1,400&display=swap');
 
-.Hero{
-    display: flex;
-    flex-direction: row;
-    color: white;
+.Hero {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
 }
-img{
-   height: 600px;
-   width: 400px; 
-}
-.left{
-    flex: 1;
-    margin-top: 5rem;
-    margin-left: 5rem;
-    width:60vw;
-    font-family: 'Caveat', cursive;
-    font-size: 2rem;
-    color: gray;
- 
-}
-.main{
-    margin-left: 2vw;
-    font-size: 4rem;
-    color: whitesmoke;
 
+img {
+  height: 600px;
+  width: 400px;
+  object-fit: cover;
 }
-.main>h1{
-margin-left: 1rem;
+
+.left {
+  flex: 1;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  width: 60vw;
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  color: gray;
 }
-.main>p{
-    letter-spacing: 4px;
-    font-size: 5rem;
+
+.main {
+  margin-left: 2vw;
+  font-size: 4rem;
+  color: whitesmoke;
 }
-.right{
+
+.main > h1 {
+  margin-left: 1rem;
+}
+
+.main > p {
+  letter-spacing: 4px;
+  font-size: 5rem;
+}
+
+.right {
+  display: flex;
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.saif, span {
+  color: rgb(245, 12, 214);
+}
+
+h2 {
+  font-size: 9rem;
+}
+
+h3 {
+  font-size: 6rem;
+}
+
+/* Media Queries for Mobile and Tablet */
+@media only screen and (max-width: 768px) {
+  .Hero {
+    margin-top: 10rem;
+    flex-direction: column-reverse;
+    
+  }
+
+  .left {
+    position: relative;
+    right: 5rem;
+    bottom: 18rem;
+  margin-left: 0rem;
+    width: 40vw;
+    font-size: 1rem;
+  }
+  .name{
+    background: green;
+    font-size: 30px;
+  }
+
+  .main {
+    font-size: 3rem;
+    margin-left: 0;
+  }
+
+  .main > h3 {
+    font-size: 3rem;
     display: flex;
-    flex: 1px;
-    margin-left: 1rem;
-}
-.saif,span{
-    color: rgb(245, 12, 214);
-}
-h2{
-    font-size: 9rem;
-}
-h3{
-    font-size: 6rem;
+    justify-content: center;
+  }
+
+  .main > h2 {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main > p {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .right{
+    display: flex;
+    justify-content: flex-end;
+    
+    align-items: center;
+    overflow: hidden;
+    
+  }
+
+  img {
+    width:50%;
+    height: auto;
+    margin-top: 2rem;
+  }
 }

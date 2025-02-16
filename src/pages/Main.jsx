@@ -1,7 +1,7 @@
 import React from 'react'
+import "../Css/Main.css"
 import About from './About'
 import Home from './Home'
-import "../Css/Main.css"
 import MySkills from './MySkills'
 import Project from './Project'
 import Contact from './Contact'
@@ -11,8 +11,8 @@ const Main = () => {
   <div className="Main" id='main'>
       <Home />
       <About />
-      <MySkills />
-      <Education />
+      <MySkills /> 
+       <Education />
       <Project />
       <Contact />
   </div>

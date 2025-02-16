@@ -9,8 +9,9 @@ const Education = () => {
         {ed}
         <h1>Education</h1>
         <div className="edu">
-            <div className="heading1"><span className='head'>B-Tech</span>(pursuing)</div>
-            <p>Pursuing B.tech 4th year in Computer Science <br /> from Delhi Institute of Technology & Research Management.</p>
+            <div className="heading"><span className='head'>B-Tech</span>(completed)</div>
+            <p>B-Tech in Computer Science  and Engineering<br /> <div className="heading">from:</div> 
+            Delhi Institute of Technology & Research Management.{`[2019-2023]`} </p>
         </div>
         <div className="edu">
             <div className="heading"><span className='head'>12th</span>(completed)</div>

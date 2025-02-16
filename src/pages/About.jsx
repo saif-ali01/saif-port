@@ -1,5 +1,7 @@
 import React from 'react'
 import "../Css/About.css"
+import bgImage from "../assets/cd.jpg";
+
 const About = () => {
   const about = "<About>";
   const about1 = "</About>";
@@ -8,8 +10,7 @@ const About = () => {
     <div className="About" id='about'>
       <div className="About-left">
         <div className="about-image">
-
-        <img src="./bp4.jpg" alt="" />
+        <img src={bgImage} alt="" />
         </div>
 
 </div>

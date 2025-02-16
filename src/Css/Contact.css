@@ -1,93 +1,143 @@
-.Contact{
+.Contact {
     background-color: black;
     color: gray;
     width: 88vw;
     font-size: 2rem;
     display: flex;
     font-family: 'Caveat', cursive;
-    height: 110vh;
+    min-height: 110vh;
     margin-top: 5rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
 }
 
-.contact-left{
+.contact-left,
+.contact-right {
     width: 50%;
-    margin-left: 3rem;
+    padding: 1rem;
 }
-.contact-right{
-    width: 50%;
- 
-}
-form{
+
+form {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
+    max-width: 600px;
 }
-input{
-    margin-top: 15px;
-    background-color: rgb(37, 34, 34);
-    padding: 1rem 1rem;
-    color: whitesmoke;
-}
-.msg{
-    height: 10rem;
-    margin-top: 15px;
-    background-color: rgb(37, 34, 34);
-    padding: 1rem 1rem;
-    color: whitesmoke;
-}
- 
 
-.inn{
-    width: 46% ;
-    position: relative;
+.input-group {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
 }
-.inn1{
-    margin-left: 17%;
-    padding-left: 50px;
-    position: absolute;
-    left:14rem;
+
+input, .msg {
+    width: 100%;
+    margin-top: 15px;
+    background-color: rgb(37, 34, 34);
+    padding: 1rem;
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
 }
-input::placeholder{
+
+input::placeholder,
+.msg::placeholder {
     font-family: 'Caveat', cursive;
-    margin-left: 2rem;
-    font-size: 1.5rem;
-}
-.inn1::placeholder{
-    position: relative;
-    right: 2.6rem;
-}
-.msg::placeholder{
-    font-family: 'Caveat', cursive;
-    margin-left: 2rem;
     font-size: 1.5rem;
 }
 
-button{
+.btn {
+    align-self: center;
     height: 3rem;
-    width: 10rem;
+    width: 12rem;
     font-size: 1.5rem;
-    font-family: 'Caveat', cursive;
     border-radius: 6px;
-    color: rgb(2, 247, 153);;
+    color: rgb(2, 247, 153);
     border: 2px solid rgb(2, 247, 153);
     background-color: transparent;
-    margin: 2rem 20rem;
-    letter-spacing: 2px;
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.conntact-section{
-    margin: 20rem 5rem;
+.btn:hover {
+    background-color: rgba(2, 247, 153, 0.1);
+}
+
+.conntact-section {
+    margin: 5rem 2rem;
     color: #fff;
     letter-spacing: 2px;
 }
-.social{
-    display: flex;
-    font-size: 3rem;
 
+.social {
+    display: flex;
+    gap: 2rem;
+    font-size: 3rem;
+    flex-wrap: wrap;
+    margin-top: 5px;
 }
-a:hover{
-    color: rgb(247, 34, 34);
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .Contact {
+        width: 100vw;
+        padding: 2rem;
+    }
 }
-.icon{
-    margin-top: 3rem;
+
+@media (max-width: 768px) {
+    .Contact {
+        flex-direction: column;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .conntact-section {
+        margin: 3rem 1rem;
+        text-align: center;
+    }
+
+    .social {
+        justify-content: center;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Contact {
+        font-size: 1.8rem;
+    }
+
+    input,
+    .msg {
+        padding: 0.8rem;
+    }
+
+    input::placeholder,
+    .msg::placeholder {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 200px;
+        font-size: 1.3rem;
+    }
+
+    .social {
+        font-size: 2rem;
+        gap: 1.5rem;
+    }
 }
