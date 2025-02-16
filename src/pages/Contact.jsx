@@ -29,10 +29,10 @@ const Contact = () => {
 
   return (
     <div className='Contact'>
+        <h1>Contact Me</h1>
       <div className="contact-left" >
         {contact}
 
-        <h1>Contact Me</h1>
         <p id='contact'> If you have other request or question, <br /> don’t hesitate to use the form.</p>
         <form action="" method='' ref={form} onSubmit={sendEmail}>
           <input type="text" placeholder='Name' name='from-name' className='inn' required />

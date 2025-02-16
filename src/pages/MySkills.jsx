@@ -7,9 +7,9 @@ const MySkills = () => {
 
   return (
     <div className="MySkill" id='skill'>
+        <h1>Technical Expertise</h1>
       <div className="myskill-left">
         {skill}
-        <h1>Technical Expertise</h1>
         <br />
         <p>Full-stack developer specializing in modern web technologies with hands-on experience in building scalable applications. Proficient in both frontend and backend development with a strong focus on clean architecture and performance optimization.</p>
         <br />
