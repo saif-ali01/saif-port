@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/saif-port/static/css/main.34b6ce3d.css",
+    "main.js": "/saif-port/static/js/main.75bbf999.js",
+    "static/media/cd.jpg": "/saif-port/static/media/cd.f13ad3903df0828a4f92.jpg",
+    "static/media/logo.png": "/saif-port/static/media/logo.c4b9463f6175872621ae.png",
+    "static/media/bp1.jpg": "/saif-port/static/media/bp1.635e32449c12c3562a42.jpg",
+    "index.html": "/saif-port/index.html",
+    "main.34b6ce3d.css.map": "/saif-port/static/css/main.34b6ce3d.css.map",
+    "main.75bbf999.js.map": "/saif-port/static/js/main.75bbf999.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34b6ce3d.css",
+    "static/js/main.75bbf999.js"
+  ]
+}
